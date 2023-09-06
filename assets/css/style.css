@@ -1,0 +1,635 @@
+/* 
+    Theme: Dental Responsive HTML Template
+    Author: Israt Zahan Mukta
+    Live URL: https://www.somrthing.com
+
+    Primary Color: #f69165
+    Secondary Color: #00cce1
+
+    Font Style: Roboto
+*/
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* Global CSS */
+body{
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+*{
+    margin: 0;
+    padding: 0; 
+}
+a{
+    text-decoration: none; 
+}
+ul{
+    padding: 0;
+}
+p{
+    color: #838383;
+}
+.title{
+    margin-bottom: 3%;
+    text-align: center;
+}
+.title h2{  
+    font-weight: 600;   
+    margin-bottom: 15px;
+}
+.title p{   
+    margin-top: 18px;
+    padding: 0 23%;
+    font-weight: 500;
+}
+
+/* Top Header CSS*/
+.top-header{
+    padding: 2.5% 0 1.5%;
+}
+.header-info{
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+.info-box{
+    display: flex;
+}
+.info-icon{
+    color: #f69165;
+    font-size: 26px;
+}
+.info-details h4{
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 10px;
+    text-transform: capitalize;
+}
+.info-details p{
+    font-size: 13px;
+    margin-left: 10px;
+    text-transform: capitalize;
+}
+.header-section{
+    background: #00cce1;
+}
+.navbar-expand-lg {
+    padding: 0;
+}
+.navbar-expand-lg .navbar-nav{
+    gap: 25px;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+}
+.nav-link{
+    color: #fff;
+    clip-path: polygon(11% 0, 100% 0%, 92% 100%, 0% 100%);
+    padding: 13px 15px !important;
+    transition: all .3s ease-in-out ;
+}
+.nav-link:hover{
+    background: #f69165;
+    color: #fff; 
+}
+.info{
+    display: none;
+}
+.appoint{
+    display: block;
+    background: #f69165;
+    border-top: 2px solid #f69165;
+    border-bottom: 2px solid #f69165;
+    padding: 9px 25px;
+    -webkit-clip-path: polygon(8% 0%, 100% 0%, 92% 100%, 0% 100%);
+    clip-path: polygon(8% 0%, 100% 0%, 92% 100%, 0% 100%);
+    transition: all .3s ease-in-out;
+}
+.appoint .appoint-btn, .appoint .fa-regular{
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+.appoint:hover{
+    background: #fff;   
+}
+.appoint:hover .appoint-btn, .appoint:hover .fa-regular{
+    color: #f69165;
+}
+/* Banner CSS */
+.banner-section{
+    background: url('../img/banner-one.png') no-repeat center;
+    background-size: cover;
+}
+.height{
+    min-height: 85vh;
+    position: relative;
+    padding-right: 2%;
+}
+.banner-content{
+   margin-left: 10% !important;
+   margin-top: 5%;
+}
+.banner-content h2, .banner-content h1{
+    background: #00cce1;
+    display: inline-block;
+    padding: 5px 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+.banner-content h1{
+    background: #f69165;
+    margin: 10px 0;
+}
+.banner-content p{
+    margin: 8px 0 24px;
+    font-weight: 500;
+    color: #636363;
+}
+.banner-content ul li{
+    display: inline-block;
+    list-style: none;
+}
+.banner-content ul li a{
+    background: #f69165;
+    padding: 12px 22px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    transition: all .3s ease-in-out;
+    border-radius: 0;
+}
+.banner-content ul li a.book{
+    background: #00cce1;
+}
+.banner-content ul li a:hover{
+    background: #00cce1;
+    color: #fff;
+}
+.banner-content ul li a.book:hover{
+    background: #f69165;
+}
+.second-item h2, .second-item h1 {
+    background: transparent;
+    padding: 0;
+}
+.second-item h2 {
+    color: #00cce1;
+    font-size: 38px;
+}
+.second-item h1 {
+    font-size: 50px;
+    color: #f69165;
+}
+.second-item p {
+    margin-top: 0px;
+}
+.banner-carousel .owl-item img {
+    display: block;
+    width: 45%;
+    position: absolute;
+    bottom: 0;
+    right: 0.1%;
+}
+.banner-carousel .second-img img{
+    width: 32% !important;  
+    right: 8% !important;
+}
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+    display: block;
+}
+.banner-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    background: #f69165;
+    left: 0;
+}
+.banner-carousel .owl-nav button.owl-next {
+    position: absolute;
+    background: #00cce1;
+    right: 0;
+}
+.banner-carousel .owl-nav button.owl-prev, .banner-carousel .owl-nav button.owl-next {
+    color: #fff;
+    padding: 0 7px !important;
+    font-size: 35px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.banner-carousel .owl-dots {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.banner-carousel button.owl-dot {
+    background: #c6ccd0;
+    color: #fff;
+    border-radius: 50%;
+    padding: 7px !important;
+    display: inline-block;
+    margin: 0 5px;
+}
+.banner-carousel button.owl-dot.active {
+    background: #f69165;
+}
+/* About CSS */
+.about-section{
+    padding: 6% 0 ;
+    position: relative;
+}
+.about-img img{
+    position: absolute;
+    width: 40%;
+    bottom: 0;
+    margin-left: -8%;
+}
+.about-title h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+.about-title p{
+    font-size: 15px;
+    margin: 2% 0 6% !important;
+    font-weight: 500;
+}
+.about-info {
+    margin-bottom: 25px;
+}
+.about-t{
+    width: 41px;
+    height: 45px;
+}
+.about-info h5{
+    font-weight: 600;
+    margin: 14px 0 10px;
+}
+.about-info p{
+    font-size: 14px;
+}
+/* Team CSS */
+.team-section{
+    background: #f9f9f9;
+    padding: 5% 0 3.5%;
+}
+.doctor{
+    position: relative;
+    background: #fff;
+    border-bottom: 4px solid #00cce1;
+    margin-bottom: 25px;
+    text-align: center;
+    transition: all .3s ease-in-out;
+}
+.doctor-img{
+    position: relative;
+    overflow: hidden;
+}
+.doctor-img::before{
+    position: absolute;
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 100%;
+    transition: all .3s ease-in-out;
+}
+.doctor:hover .doctor-img::before{
+    top: 0;
+}
+.doctor:hover{ 
+    border-bottom: 4px solid #f69165;
+}
+.doctor-img img{
+    width: 100%;
+}
+.doctor h5{
+    margin: 22px 0 3px;
+    font-weight: 600;
+    transition: all .3s ease-in-out;
+}
+.doctor:hover h5{  
+    color: #f69165;
+}
+.doctor p{
+    margin-bottom: 20px;
+}
+.social-info{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -110%);
+    transition: all 0.3s ease-in-out;
+}
+.doctor:hover .social-info{
+    opacity: 1;
+    top: 50%;
+}
+.social-info ul li{
+    display: inline-block;
+    border: 2px solid #fff;
+    list-style: none;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    transition: all .3s ease-in-out;
+}
+.social-info ul li a{
+    list-style: none;
+    line-height: 30px;
+    color: #fff;
+}
+.social-info ul li:hover{
+    background: #f69165;
+    border: 2px solid #f69165;
+}
+/* Service Section */
+.service-section{
+    padding: 5% 0 4%;
+}
+.service{
+    border: 4px solid #ebebeb;
+    margin-bottom: 25px;
+    padding: 25px 30px 10px;
+    transition: all .3s ease-in-out;
+}
+.service-tag{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 16px;
+}
+.service-img{
+    width: 41px;
+    height: 45px;
+}
+.service-tag h5{
+    font-weight: 600;
+    transition: all .3s ease-in-out;
+}
+.service p{
+    font-size: 15px;
+}
+.service .read-more{
+    color: #707070;
+    font-weight: 600;
+    transition: all .3s ease-in-out;
+}
+.service:hover{
+    border: 4px solid #f69165;
+}
+.service:hover h5, .service:hover .read-more{
+    color: #f69165;
+}
+/* Pricing Section */
+.pricing-section{
+    background: #f9f9f9;
+    padding: 5% 0% 6%;
+}
+.price-table{
+    border: 4px solid #fff;
+    padding: 25px 0;
+    text-align: center;
+    transition: all .3s ease-in-out;
+}
+.price-table h3, .price p{
+    font-weight: 600;
+    color: #00cce1;
+    transition: all .2s ease-in-out;
+}
+.price-table p{
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+.price{
+    background: #fff;
+    padding: 25px 0 1px;
+    transition: all .3s ease-in-out;
+}
+.price h2{
+    font-size: 45px;
+    font-weight: 700;
+    color: #00cce1;
+    transition: all .3s ease-in-out;
+}
+.price-content{
+    padding: 27px 0 20px;
+}
+.price-info{
+    margin-bottom: 15px !important;
+    font-weight: 500;
+}
+.btn-sign{
+    background: #00cce1;
+    border-radius: 0;
+    padding: 10px 24px 8px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+.price-table:hover{
+    border: 4px solid #f69165;
+}
+.price-table:hover h3{
+    color: #f69165;
+}
+.price-table:hover .price, .price-table:hover .btn-sign{
+    background: #f69165;
+    color: #fff;
+}
+.price-table:hover .price h2, .price-table:hover .price p{
+    color: #fff;
+}
+/* Client Section */
+.client-section{
+    position: relative;
+    background: url('../img/client-bg.png') no-repeat center;
+    background-size: cover;
+    border-bottom: 3px solid #050505;
+    padding: 5% 0%;
+    color: #fff;
+    z-index: 1;
+}
+.client-section::before{
+    position: absolute;
+    content: '';
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.client-section p{
+    color: #fff;
+}
+.brand{
+    min-height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.brand-carousel .brand img{
+    width: auto;
+}
+.brand-carousel .owl-nav.disabled {
+    display: block;
+}
+.brand-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    background: #f69165;
+    left: 0;
+}
+.brand-carousel .owl-nav button.owl-next {
+    position: absolute;
+    background: #00cce1;
+    right: 0;
+}
+.brand-carousel .owl-nav button.owl-prev, .brand-carousel .owl-nav button.owl-next {
+    color: #fff;
+    padding: 0 7px !important;
+    font-size: 35px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* Footer */
+footer{
+    background: url('../img/footer-bg.png') no-repeat center;
+    background-size: cover;
+    padding: 5% 0 4%;
+}
+.footer-title{
+    margin-bottom: 30px;
+    width: 50%;
+}
+.footer-title h2{
+    font-weight: 600;
+    color: #fff;
+}
+footer p{
+    margin-bottom: 0;
+    font-size: 15px;
+    color: #b4b4b4;
+}
+.contact-us{
+    margin-top: 30px;
+}
+.footer-contact {
+    display: flex;
+    margin-bottom: 15px;
+    gap: 32px !important;
+}
+.footer-icons{
+    width: 22px;
+    height: 50px;
+}
+.footer-icons .fa-solid, .footer-icons .fa-regular {
+    line-height: 50px;
+    font-size: 30px;
+    color: #00cce1;
+}
+.posts{
+    margin-bottom: 25px;
+}
+.post .date{
+    margin-top: 6px;
+    color: #717171;
+}
+.post .date span{
+    margin: 0 6px;
+}
+form{
+    display: flex;
+    padding: 30px 0 35px; 
+}
+form .form-control{
+    border-radius: 0;
+    padding: 10px;
+}
+form input#email{
+    background: transparent;
+    border: 2px solid #252525;
+    color: #b4b4b4;
+}
+form input::placeholder{
+    color: #3d3d3d !important;
+}
+form input.submit{
+    background: #f69165;
+    border: 2px solid #f69165;
+    width: 40%;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+form input.submit:hover{
+    background: #00cce1;
+    border: 2px solid #00cce1;
+}
+form .form-control:focus{
+    outline: none;
+    box-shadow: none;
+}
+.social-contact{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.follow h4{
+    font-weight: 600;
+    color: #fff;
+}
+.social-media ul{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 0;
+}
+.social-media ul li{
+    background: #323232;
+    display: inline-block;
+    list-style: none;
+    width: 37px;
+    height: 37px;
+    text-align: center;
+    transition: all .3s ease-in-out;
+}
+.social-media ul li:hover{
+    background: #f69165;
+}
+.social-media ul li a .fa-brands{
+    line-height: 37px;
+    color: #fff;
+}
+/* Bottom Footer */
+.bottom-footer{
+    background: #161616;
+    padding: 2% 0 1.2%;
+}
+.bottom-footer p{
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    color: #777777;
+}
+.bottom-footer p a{
+    color: #00cce1;
+    transition: all .2s ease-in-out;
+}
+.bottom-footer p a:hover{
+    color: #f69165;
+}
+
+
+

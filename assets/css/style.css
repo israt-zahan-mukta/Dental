@@ -32,6 +32,7 @@ ul{
 }
 p{
     color: #838383;
+    font-size: 16px;
 }
 .title{
     margin-bottom: 3%;
@@ -70,7 +71,7 @@ p{
     text-transform: capitalize;
 }
 .info-details p{
-    font-size: 13px;
+    font-size: 15px;
     margin-left: 10px;
     text-transform: capitalize;
 }
@@ -152,6 +153,7 @@ p{
     margin: 8px 0 24px;
     font-weight: 500;
     color: #636363;
+    font-size: 15px;
 }
 .banner-content ul li{
     display: inline-block;
@@ -194,13 +196,13 @@ p{
 }
 .banner-carousel .owl-item img {
     display: block;
-    width: 45%;
+    width: 43%;
     position: absolute;
     bottom: 0;
     right: 0.1%;
 }
 .banner-carousel .second-img img{
-    width: 32% !important;  
+    width: 28% !important;  
     right: 8% !important;
 }
 .owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
@@ -247,16 +249,16 @@ p{
 }
 .about-img img{
     position: absolute;
-    width: 40%;
+    width: 37%;
     bottom: 0;
-    margin-left: -8%;
+    left: 2%;
 }
 .about-title h2{
     font-size: 30px;
     font-weight: 700;
 }
 .about-title p{
-    font-size: 15px;
+    font-size: 16px;
     margin: 2% 0 6% !important;
     font-weight: 500;
 }
@@ -272,7 +274,7 @@ p{
     margin: 14px 0 10px;
 }
 .about-info p{
-    font-size: 14px;
+    font-size: 15px;
 }
 /* Team CSS */
 .team-section{
